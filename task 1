@@ -1,0 +1,11 @@
+f = open('new.txt', "r")
+text = f.read()  # str
+
+counter = {}
+
+for letter in text:
+    if letter not in counter:
+        counter[letter] = 0
+    counter[letter] += 1
+
+print(f"a:{counter.get('a')}, e:{counter.get('e')}, i:{counter.get('i')}, o:{counter.get('o')}, u:{counter.get('u')}")

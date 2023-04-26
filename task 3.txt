@@ -1,0 +1,5 @@
+open('news.txt', "r")
+
+for i in f:
+    x=i.strip()[::-1]
+    print(x)
